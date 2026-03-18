@@ -1,5 +1,5 @@
 {
-  "name": "@wiicode/storage",
+  "name": "@wiicode-projects/storage",
   "version": "1.0.0",
   "description": "NestJS library for Wiicode Storage file uploads",
   "main": "dist/index.js",

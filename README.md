@@ -1,11 +1,11 @@
-# @wiicode/storage
+# @wiicode-projects/storage
 
 NestJS library for uploading and managing files on [Wiicode Storage](https://storage.wiicode.org).
 
 ## Installation
 
 ```bash
-npm install @wiicode/storage
+npm install @wiicode-projects/storage
 ```
 
 **Peer dependencies** (must already be in your NestJS project):
@@ -21,7 +21,7 @@ npm install @wiicode/storage
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { StorageModule } from '@wiicode/storage';
+import { StorageModule } from '@wiicode-projects/storage';
 
 @Module({
   imports: [
@@ -39,7 +39,7 @@ export class AppModule {}
 ```typescript
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { StorageModule } from '@wiicode/storage';
+import { StorageModule } from '@wiicode-projects/storage';
 
 @Module({
   imports: [
@@ -64,7 +64,7 @@ import { Injectable } from '@nestjs/common';
 import {
   StorageModuleOptionsFactory,
   StorageModuleOptions,
-} from '@wiicode/storage';
+} from '@wiicode-projects/storage';
 
 @Injectable()
 export class StorageConfigService implements StorageModuleOptionsFactory {
@@ -212,7 +212,7 @@ async removeFile(fileUrl: string) {
 
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { StorageService, CompressOptions } from '@wiicode/storage';
+import { StorageService, CompressOptions } from '@wiicode-projects/storage';
 
 @Injectable()
 export class MediaService {
